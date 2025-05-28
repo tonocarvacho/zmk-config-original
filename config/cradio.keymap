@@ -57,6 +57,32 @@
             bindings = <&kp>, <&kp>;
         };
 
+        hml: home_row_mod_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "home_row_mod_left";
+            #binding-cells = <2>;
+            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <150>;
+            quick-tap-ms = <100>;
+            global-quick-tap;
+            bindings = <&kp>, <&kp>;
+
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 32 33>;
+        };
+
+        hmr: home_row_mod_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "home_row_mod_right";
+            #binding-cells = <2>;
+            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <150>;
+            quick-tap-ms = <100>;
+            global-quick-tap;
+            bindings = <&kp>, <&kp>;
+
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31>;
+        };
+
         mmv {
             acceleration-exponent = <1>;      // 1
             time-to-max-speed-ms = <300>;    // 40
@@ -87,10 +113,10 @@
         default_layer {
             display-name = "DEFAULT";
             bindings = <
-&kp Q  &kp W  &kp E           &kp R             &kp T        &kp Y           &kp U             &kp I               &kp O    &kp P
-&kp A  &kp S  &kp D           &ht LEFT_SHIFT F  &kp G        &kp H           &kp J             &kp K               &kp L    &kp SEMICOLON
-&kp Z  &kp X  &ht LEFT_ALT C  &ht LEFT_GUI V    &kp B        &ht LEFT_GUI N  &ht LEFT_SHIFT M  &ht LEFT_ALT COMMA  &kp DOT  &kp SLASH
-                              &lt 2 SPACE       &kp LCTRL    &kp SPACE       &lt 1 ENTER
+&kp Q  &kp W  &kp E            &kp R              &kp T        &kp Y            &kp U              &kp I                &kp O    &kp P
+&kp A  &kp S  &kp D            &hml LEFT_SHIFT F  &kp G        &kp H            &kp J              &kp K                &kp L    &kp SEMICOLON
+&kp Z  &kp X  &hml LEFT_ALT C  &hml LEFT_GUI V    &kp B        &hmr LEFT_GUI N  &hmr LEFT_SHIFT M  &hmr LEFT_ALT COMMA  &kp DOT  &kp SLASH
+                               &lt 2 SPACE        &kp LCTRL    &kp SPACE        &lt 1 ENTER
             >;
         };
 
@@ -116,10 +142,10 @@
 
         double-press {
             bindings = <
-&trans  &trans  &trans  &trans         &trans           &trans  &trans                &trans                 &trans  &trans
-&trans  &trans  &trans  &kp LS(LA(T))  &kp LS(LA(G))    &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans
-&trans  &trans  &trans  &kp LS(LA(V))  &kp LS(LA(B))    &trans  &trans                &trans                 &trans  &trans
-                        &trans         &trans           &trans  &trans
+&kp CAPSLOCK  &trans  &kp PAGE_UP  &kp PAGE_DOWN  &trans           &trans  &trans  &trans                &trans                 &trans
+&trans        &trans  &trans       &kp LS(LA(T))  &kp LS(LA(G))    &trans  &trans  &trans                &kp DELETE             &trans
+&trans        &trans  &kp INS      &kp LS(LA(V))  &kp LS(LA(B))    &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+                                   &trans         &trans           &trans  &trans
             >;
         };
 
