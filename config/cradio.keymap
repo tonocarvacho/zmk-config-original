@@ -147,7 +147,7 @@
 
         double-press {
             bindings = <
-&kp CAPSLOCK  &trans  &kp PAGE_UP  &kp PAGE_DOWN  &trans           &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2          &bt BT_SEL 3           &bt BT_SEL 4
+&kp CAPSLOCK  &trans  &kp PAGE_UP  &kp PAGE_DOWN  &kp LS(LA(T))    &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2          &bt BT_SEL 3           &bt BT_SEL 4
 &trans        &trans  &trans       &kp LS(LA(T))  &kp LS(LA(G))    &bt BT_CLR    &bt BT_CLR_ALL  &trans                &kp DELETE             &trans
 &trans        &trans  &kp INS      &kp LS(LA(V))  &kp LS(LA(B))    &trans        &trans          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
                                    &trans         &trans           &trans        &trans
