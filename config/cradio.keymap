@@ -147,19 +147,19 @@
 
         double-press {
             bindings = <
-&kp CAPSLOCK  &trans  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp LS(LA(T))    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2          &bt BT_SEL 3           &bt BT_SEL 4
-&trans        &trans  &kp LEFT_GUI        &kp LEFT_ALT         &kp LS(LA(G))    &trans        &kp LEFT_ALT  &kp LEFT_GUI          &kp LA(BACKSPACE)      &bt BT_CLR
-&trans        &trans  &kp INS             &kp LS(LA(V))        &kp LS(LA(B))    &trans        &trans        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &bt BT_CLR_ALL
-                                          &trans               &trans           &trans        &trans
+&kp CAPSLOCK  &trans         &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans           &trans  &kp LA(LG(U))  &kp LA(LG(I))         &kp LA(LG(O))          &kp LA(LG(P))
+&trans        &kp LS(LA(T))  &kp LEFT_GUI        &kp LS(LA(G))        &trans           &trans  &kp LEFT_ALT   &kp LEFT_GUI          &kp LA(BACKSPACE)      &bt BT_CLR
+&trans        &trans         &kp INS             &kp LS(LA(V))        &kp LS(LA(B))    &trans  &trans         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &bt BT_CLR_ALL
+                                                 &trans               &trans           &trans  &trans
             >;
         };
 
         Fs {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &trans  &trans  &trans    &kp F12  &kp F1  &kp F2  &kp F3  &trans
-&kp NUMBER_3  &kp NUMBER_4  &trans  &trans  &trans    &kp F11  &kp F4  &kp F5  &kp F6  &trans
-&kp N5        &kp NUMBER_6  &trans  &trans  &trans    &kp F10  &kp F7  &kp F8  &kp F9  &trans
-                                    &trans  &trans    &trans   &trans
+&kp NUMBER_1  &kp NUMBER_2  &trans  &trans  &trans    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&kp NUMBER_3  &kp NUMBER_4  &trans  &trans  &trans    &kp F11       &kp F4        &kp F5        &kp F6        &trans
+&kp N5        &kp NUMBER_6  &trans  &trans  &trans    &kp F10       &kp F7        &kp F8        &kp F9        &trans
+                                    &trans  &trans    &trans        &trans
             >;
         };
     };
