@@ -147,10 +147,10 @@
 
         double-press {
             bindings = <
-&kp CAPSLOCK  &trans         &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans           &trans  &kp LA(LG(U))  &kp LA(LG(I))         &kp LA(LG(O))          &kp LA(LG(P))
-&trans        &kp LS(LA(T))  &kp LEFT_GUI        &kp LS(LA(G))        &trans           &trans  &kp LEFT_ALT   &kp LEFT_GUI          &kp LA(BACKSPACE)      &bt BT_CLR
-&trans        &trans         &kp INS             &kp LS(LA(V))        &kp LS(LA(B))    &trans  &trans         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &bt BT_CLR_ALL
-                                                 &trans               &trans           &trans  &trans
+&kp CAPSLOCK  &trans         &kp HOME      &kp END        &trans           &trans  &kp LA(LG(U))   &kp LA(LG(I))         &kp LA(LG(O))          &kp LA(LG(P))
+&trans        &kp LS(LA(T))  &kp LEFT_GUI  &kp LS(LA(G))  &trans           &trans  &kp LEFT_ALT    &kp LEFT_GUI          &kp LA(BACKSPACE)      &bt BT_CLR
+&trans        &trans         &kp INS       &kp LS(LA(V))  &kp LS(LA(B))    &trans  &kp LEFT_SHIFT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &bt BT_CLR_ALL
+                                           &trans         &trans           &trans  &trans
             >;
         };
 
