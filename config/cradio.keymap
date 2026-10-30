@@ -128,10 +128,10 @@
         right_layer {
             display-name = "NUM & NAVIGATION";
             bindings = <
-&kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)             &kp LG(T)    &kp LG(Y)  &kp LG(U)  &kp LG(I)         &kp LG(O)          &kp LG(P)
-&kp LG(A)  &kp LG(S)  &kp LG(D)  &ht LEFT_SHIFT LG(F)  &kp LG(G)    &kp SQT    &kp LG(J)  &kp LG(K)         &kp BACKSPACE      &kp EQUAL
-&kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)             &kp LG(B)    &kp GRAVE  &kp MINUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
-                                 &mo 3                 &kp LCTRL    &nums      &trans
+&kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)               &kp LG(T)    &kp LG(Y)  &kp LG(U)  &kp LG(I)         &kp LG(O)          &kp LG(P)
+&kp LG(A)  &kp LG(S)  &kp LG(D)  &ht (LEFT_SHIFT) LG(F)  &kp LG(G)    &kp SQT    &kp LG(J)  &kp LG(K)         &kp BACKSPACE      &kp EQUAL
+&kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)               &kp LG(B)    &kp GRAVE  &kp MINUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
+                                 &mo 3                   &kp LCTRL    &nums      &trans
             >;
         };
 
@@ -156,10 +156,10 @@
 
         Fs {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &trans  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&kp NUMBER_3  &kp NUMBER_4  &trans  &bt BT_SEL 3    &bt BT_SEL 0    &kp F11       &kp F4        &kp F5        &kp F6        &bt BT_CLR
-&kp N5        &kp NUMBER_6  &trans  &bt BT_CLR_ALL  &bt BT_SEL 0    &kp F10       &kp F7        &kp F8        &kp F9        &bt BT_CLR_ALL
-                                    &trans          &trans          &trans        &trans
+&kp F1  &trans       &trans  &kp N5        &kp NUMBER_6    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&kp F2  &kp LC(TAB)  &trans  &kp NUMBER_1  &kp NUMBER_3    &kp F11       &kp F4        &kp F5        &kp F6        &bt BT_CLR
+&kp F3  &trans       &trans  &kp NUMBER_2  &kp NUMBER_4    &kp F10       &kp F7        &kp F8        &kp F9        &bt BT_CLR_ALL
+                             &trans        &trans          &trans        &trans
             >;
         };
     };
